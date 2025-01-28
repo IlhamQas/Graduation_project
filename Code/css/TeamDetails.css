@@ -1,0 +1,105 @@
+/* إعدادات عامة */
+
+body {
+    font-family: cursive;
+    background-color: #f0f4f8;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    height: 100vh; /* ملء الشاشة */
+    display: flex;
+    justify-content: center; /* محاذاة أفقيًا */
+    align-items: center; /* محاذاة رأسيًا */
+    position: relative; /* لتحديد موضع زر الرجوع */
+}
+
+/* تنسيق زر الرجوع */
+.back-container {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.back-button {
+    font-size: 1.2rem;
+    color: #007bff;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: color 0.3s;
+    text-decoration: none; /* إزالة الخط تحت النص */
+}
+
+.back-button i {
+    font-size: 2rem;
+    margin-right: 8px;
+}
+
+.back-button:hover {
+    color: #0056b3;
+}
+
+/* البطاقة */
+.card-container {
+    width: 700px; /* عرض البطاقة */
+    height: auto; /* تعديل ارتفاع البطاقة ليتناسب مع المحتوى */
+    position: relative;
+    text-align: center;
+    background-color: transparent;
+    padding-top: 60px; /* لإعطاء المسافة العلوية المناسبة */
+}
+
+/* البطاقة */
+.card {
+    width: 100%;
+    border: none;
+    border-radius: 20px;
+    background: linear-gradient(145deg, #ffffff, #e6e9ef);
+    box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.2), -7px -7px 20px rgba(255, 255, 255, 0.7);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 12px 12px 25px rgba(0, 0, 0, 0.3), -12px -12px 25px rgba(255, 255, 255, 0.8);
+}
+
+/* تنسيق الصورة داخل البطاقة */
+.card-img-container {
+    position: relative;
+    margin-top: -50px;
+}
+
+.card-img-top {
+    border-radius: 50%;
+    border: 6px solid #fff;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+    height: 180px;
+    width: 180px;
+    object-fit: cover;
+}
+
+/* تنسيق النص */
+.overlay-title {
+    font-weight: bold;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.overlay-description {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+    color: #007bff;
+}
+
+.card-body .card-text {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.8;
+    text-align: justify;
+    margin-bottom: 15px; /* مسافة أسفل الفقرات */
+}
